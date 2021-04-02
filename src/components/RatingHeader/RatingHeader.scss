@@ -1,0 +1,46 @@
+.header {
+  height: 500px;
+  background-image: url("../../images/pizza-1-kg_slider.jpg");
+  background-position: center;
+
+  &__link-to-orders {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  &__title {
+    padding: 20px 0 20px 245px;
+    color: white;
+    font-size: 30px;
+  }
+
+  &__rating {
+    width: 20%;
+    height: 410px;
+
+    margin-left: 150px;
+
+    background-color: white;
+    border-radius: 37px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 11px;
+
+    border-bottom: 1px black solid;
+    font-size: 30px;
+  }
+
+  &__img {
+    width: 20%;
+  }
+}

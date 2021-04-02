@@ -1,0 +1,16 @@
+.ordered-pizzas-list {
+  color: #fff;
+  list-style: list-style-type;
+
+  &__item {
+    display: flex;
+    &__img {
+      width: 20%;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    &__name {
+      line-height: 60px;
+    }
+  }
+}

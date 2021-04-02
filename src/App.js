@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useMemo } from 'react';
+import { HashRouter, Switch, Route } from 'react-router-dom';
+import { ProductList } from './components/ProductList';
+import { ProductsContext } from './components/ProductsContext';
+import { RatingHeader } from './components/RatingHeader';
+import { Orders } from './components/Orders';
+import './App.scss';
 
-function App() {
+export function App() {
+  const [allOrderedPizzas, setAllOrderedPizzas] = useState([]);
+
+  const contextValue = useMemo(() => (
+    {
+      allOrderedPizzas,
+      setAllOrderedPizzas,
+    }
+  ), [allOrderedPizzas]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProductsContext.Provider value={contextValue}>
+        <HashRouter>
+          <Switch>
+            <Route path="/orders" component={Orders} exact />
+            <Route>
+              <RatingHeader allOrderedPizzas={allOrderedPizzas} />
+              <ProductList />
+            </Route>
+          </Switch>
+        </HashRouter>
+      </ProductsContext.Provider>
     </div>
   );
 }
-
-export default App;
