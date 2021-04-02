@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b2f8b1e4.chunk.css",
+    "main.js": "./static/js/main.c4e46072.chunk.js",
+    "main.js.map": "./static/js/main.c4e46072.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.ac0df0c5.js",
+    "runtime-main.js.map": "./static/js/runtime-main.ac0df0c5.js.map",
+    "static/js/2.37bcdaf4.chunk.js": "./static/js/2.37bcdaf4.chunk.js",
+    "static/js/2.37bcdaf4.chunk.js.map": "./static/js/2.37bcdaf4.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.b2f8b1e4.chunk.css.map": "./static/css/main.b2f8b1e4.chunk.css.map",
+    "static/js/2.37bcdaf4.chunk.js.LICENSE.txt": "./static/js/2.37bcdaf4.chunk.js.LICENSE.txt",
+    "static/media/RatingHeader.scss": "./static/media/pizza-1-kg_slider.dbc43c75.jpg",
+    "static/media/Orders.scss": "./static/media/pizza_logo.230f0ee7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac0df0c5.js",
+    "static/js/2.37bcdaf4.chunk.js",
+    "static/css/main.b2f8b1e4.chunk.css",
+    "static/js/main.c4e46072.chunk.js"
+  ]
+}
