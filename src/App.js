@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
+
 import { ProductList } from './components/ProductList';
 import { ProductsContext } from './components/ProductsContext';
 import { RatingHeader } from './components/RatingHeader';

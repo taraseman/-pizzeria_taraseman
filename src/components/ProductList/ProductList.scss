@@ -1,15 +1,17 @@
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+
   padding: 0 150px;
 
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  grid-gap: 60px;
+  
 }
 
 .title {
   padding: 50px 0;
+
   color: white;
   text-align: center;
   font-size: 100px;
@@ -45,11 +47,6 @@
     border: yellow 1px solid;
     color: yellow;
     background-color: black;
-
-    &:hover {
-      background-color: yellow;
-      color: rgb(155, 151, 151);
-    } 
   }
 
   &__button {

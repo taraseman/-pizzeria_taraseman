@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 import { getTop5Pizzas } from '../../helpers';
 
@@ -45,4 +47,12 @@ export const RatingHeader = ({ allOrderedPizzas }) => {
         }
     </header>
   );
+};
+
+RatingHeader.propTypes = {
+  allOrderedPizzas: PropTypes.arrayOf,
+};
+
+RatingHeader.defaultProps = {
+  allOrderedPizzas: [],
 };

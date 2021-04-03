@@ -2,9 +2,8 @@
 
  - [DeMo](https://taraseman.github.io/-pizzeria_taraseman/#/).
 
-## Description(Task)
-
-(Some text...)
+## Description
+Pizzeria React App
 
 ## Local deployment
 

@@ -1,21 +1,17 @@
 import React, { useContext, useState, useEffect, useCallback } from 'react';
+
 import { Product } from '../Product';
-
 import { ProductsContext } from '../ProductsContext';
-
 import { pizzasMenu } from '../../pizzasMenu';
-
 import { OrderedList } from '../OrderedList';
+import { Popup } from '../Popup';
 
 import './ProductList.scss';
-import { Popup } from '../Popup';
 
 export const ProductList = () => {
   const [orderedPizzas, setOrderedPizzas] = useState([]);
   const [isPopupVisible, setPopupVisibility] = useState(false);
-
   const { allOrderedPizzas, setAllOrderedPizzas } = useContext(ProductsContext);
-
   const takePizza = useCallback((pizzaName) => {
     setOrderedPizzas([...orderedPizzas, pizzaName]);
   });

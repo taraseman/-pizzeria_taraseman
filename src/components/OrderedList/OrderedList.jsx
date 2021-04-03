@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { pizzasImages } from '../../pizzasMenu';
 import './OrderedList.scss';
 
 export const OrderedList = ({ orderedPizzas }) => (
-  <ol className="ordered-pizzas-list">
+  <ul className="ordered-pizzas-list">
     {orderedPizzas.map(pizza => (
       <li className="ordered-pizzas-list__item">
         <img
@@ -15,5 +16,9 @@ export const OrderedList = ({ orderedPizzas }) => (
       </li>
     ))}
     <p>{`${orderedPizzas.length} pizzas`}</p>
-  </ol>
+  </ul>
 );
+
+OrderedList.propTypes = {
+  orderedPizzas: PropTypes.arrayOf.isRequired,
+};
