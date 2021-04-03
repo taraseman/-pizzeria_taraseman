@@ -1,6 +1,6 @@
 # Pizzeria React :pizza:
 
-[DeMo](https://taraseman.github.io/-pizzeria_taraseman/#/).
+ - [DeMo](https://taraseman.github.io/-pizzeria_taraseman/#/).
 
 ## Description(Task)
 
